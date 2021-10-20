@@ -2,6 +2,13 @@
 #include <string.h>
 using namespace std;
 
+/**
+*	quan ly tiem sach
+*	chuc nang: them, xoa, sach, so sach con(in danh sach), so sach da ban, thue sach(them thong tin customer vao book), tra sach(set thong tin customer = NULL)
+*	
+*
+*
+*/
 struct Customer {
 	char name[50];
 	char address[50];
@@ -26,8 +33,8 @@ bool isEmpty(Stack top);
 Node *createNode(Book data);
 bool push(Stack &top, Book newItem);
 void deleteTop(Stack &top);
-bool pop(Stack &top, Book &outItem);
-bool top(Stack top, Book &outItem);
+bool pop(Stack &top, Book &outItem); // not use
+bool top(Stack top, Book &outItem); // not use
 
 void init(Stack &top) {
 	top = NULL;
