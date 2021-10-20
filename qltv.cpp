@@ -14,6 +14,7 @@ struct Customer {
 	char address[50];
 	char phoneNum[11];
 	char returnDate[11];// ngay tra sach
+	int cost;
 };
 
 struct Book {
@@ -150,6 +151,7 @@ void printOneCustomerInfo(Customer *customer) {
 	printf("\naddress: %s", customer->address);
 	printf("\nphoneNum: %s", customer->phoneNum);
 	printf("\nreturnDate: %s", customer->returnDate);
+	printf("\ncost: %d", customer->cost);
 }
 
 /**
@@ -274,6 +276,8 @@ void inputCustomerInfo(Customer *customer) {
 	scanf("%s", &customer->phoneNum);
 	printf("Nhap ngay tra: ");
 	scanf("%s", &customer->returnDate);
+	printf("Nhap phi: ");
+	scanf("%d", &customer->cost);
 }
 
 
